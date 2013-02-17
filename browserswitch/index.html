@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="libs/jq.js" > </script>
+<script src="js/switch.js" > </script>
+
+<script>
+	$(document).ready(function () {
+
+
+
+		$.browserSwitch({
+			Safari : function (){
+				$('body').css("background-color", 'green');
+
+			},
+			Opera : function (){
+				$('body').css("background-color", 'blue');
+			},
+			Firefox : function () {
+				$('body').css("background-color", 'yellow');
+			}
+
+		});
+	})
+	
+</script>
+
+</head>
+<body>
+	Hello World!
+	</body>
+</html>
